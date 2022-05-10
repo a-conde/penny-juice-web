@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-color: whitesmoke; 
+	background-size: cover;
+	font-family: Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
+}
+h1, h2, h3 {
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    background-color: whitesmoke;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+	flex-flow: wrap
+}
+.logo{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    display: flex;
+    justify-content: left;
+	left: 10%;
+    top: 10px;
+}
+
+.socials {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    padding: 5px;
+    color: black;
+    top: 40px;
+    align-items: center;
+	font-weight: bold;
+}
+
+i {
+    padding: 5px;
+    color: white;
+}
+
+
+.header {
+    background-color: whitesmoke;
+    width: 98%;
+    height: 20%;
+    margin-right: auto;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	padding-top: 15px;
+	color: black;
+	text-align: center;
+		text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	padding-bottom: 10px;
+}
+
+
+.nav {
+    width: 100%;
+    background-color: whitesmoke;
+    line-height: 35px;
+	padding-left: 30%;
+    float: left;   
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	z-index: 99;
+	flex-flow: row;
+	flex: wrap;
+	padding-bottom: 10px;
+}
+
+.nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+	
+}
+
+.nav ul {
+    float: left;
+    list-style: none;
+    position: relative;  
+	z-index: 99;
+}
+ 
+.nav ul li {
+    float: left;
+    list-style: none;
+    position: relative; 
+}
+
+.nav ul li a {
+    display: block;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    color: black;
+    font-size: 14px;
+    padding: 0px 17px;
+	line-height: 10px;
+    text-decoration: none;
+	text-align: justify;
+}
+
+.nav ul li a:hover {
+	background-color: transparent;
+	border-radius: 10px 10px 10px 10px;
+	color: #56A984;
+	border-bottom: thick;
+	border-bottom-color: #56A084;
+	border-bottom-width: inherit;
+	font-weight: bold;
+}
+
+.nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: whitesmoke;
+    padding-left: 6px;
+    border-radius: 0px 0px 8px 8px;  
+}
+
+.nav ul li ul li {
+    padding: 8px 2px;
+}
+
+.nav ul li ul li a {
+    color: black;
+}
+
+.nav ul li ul li a:hover {
+    color: #56A084;
+	font-weight: bold;
+}
+
+h1 {
+  color: #474544;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.blog {
+	width: 100%;
+	height: 100%;
+	background-image: url("../juice3.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding-top: 20%;
+	padding-bottom: 20%;
+	padding-right: 20%;
+	color: transparent;
+	content-align:center;
+}
+
+.blog > h1 {
+	color: #cc3300;
+			text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+text-align: center;
+	font-size: 50px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  background: #ECE9E6;
+background-color: whitesmoke;
+
+}
+
+.card:hover {
+	border-color: black;
+	border-style: solid;
+	border-width: thin;
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+	text-align: justify;
+}
+
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: .5rem;
+}
+
+.user__image {
+  border-radius: 50%;
+}
+
+.user__info > small {
+  color: #666;
+}
+
+
+.footer {
+	background-color: #cc3300;
+	width: 100%;
+	padding-top: 50px;
+	margin-top: 50px;
+	height: 70px;
+	color: white;
+	text-align: center;
+	position: sticky;
+
+}
+
+.address {
+	color: white;
+	float: left;
+	padding-left: 20px;
+}
+

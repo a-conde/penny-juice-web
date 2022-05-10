@@ -1,0 +1,259 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-color: whitesmoke; 
+	background-size: cover;
+	font-family: Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
+}
+h1, h2, h3 {
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    background-color: whitesmoke;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+	flex-flow: wrap
+}
+.logo{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    display: flex;
+    justify-content: left;
+	left: 10%;
+    top: 10px;
+}
+
+.socials {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    padding: 5px;
+    color: black;
+    top: 40px;
+    align-items: center;
+	font-weight: bold;
+}
+
+i {
+    padding: 5px;
+    color: white;
+}
+
+
+.header {
+    background-color: whitesmoke;
+    width: 98%;
+    height: 20%;
+    margin-right: auto;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	padding-top: 15px;
+	color: black;
+	text-align: center;
+		text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	padding-bottom: 10px;
+}
+
+
+.nav {
+    width: 100%;
+    background-color: whitesmoke;
+    line-height: 35px;
+	padding-left: 30%;
+    float: left;   
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	z-index: 99;
+	flex-flow: row;
+	flex: wrap;
+	padding-bottom: 10px;
+}
+
+.nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+	
+}
+
+.nav ul {
+    float: left;
+    list-style: none;
+    position: relative;  
+	z-index: 99;
+}
+ 
+.nav ul li {
+    float: left;
+    list-style: none;
+    position: relative; 
+}
+
+.nav ul li a {
+    display: block;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    color: black;
+    font-size: 14px;
+    padding: 0px 17px;
+	line-height: 10px;
+    text-decoration: none;
+	text-align: justify;
+}
+
+.nav ul li a:hover {
+	background-color: transparent;
+	border-radius: 10px 10px 10px 10px;
+	color: #56A984;
+	border-bottom: thick;
+	border-bottom-color: #56A084;
+	border-bottom-width: inherit;
+	font-weight: bold;
+}
+
+.nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: whitesmoke;
+    padding-left: 6px;
+    border-radius: 0px 0px 8px 8px;  
+}
+
+.nav ul li ul li {
+    padding: 8px 2px;
+}
+
+.nav ul li ul li a {
+    color: black;
+}
+
+.nav ul li ul li a:hover {
+    color: #56A084;
+	font-weight: bold;
+}
+
+.about-image {
+	align-content: center;
+	height: 300px;
+	width: 100%;
+	background-image:url("../5760224.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3{
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.tabs{
+    width: 600px;
+    display: block;
+	margin-left: 25%;
+    position: relative;
+	z-index: auto;
+}
+
+.tabs .tab{
+    float: left;
+    display: block;
+}
+
+.tabs .tab>input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.tabs .tab>label {
+    display: block;
+    padding: 6px 21px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    color: black;
+    background: transparent;
+	font-weight: bold;
+	opacity: 0.6;
+}
+
+.tabs .tab>label:hover {
+	color: #CC3300;
+}
+
+
+.tabs .content {
+    z-index: 0;/* or display: none; */
+    overflow: hidden;
+    width: 600px;
+    padding: 25px;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    background: transparent;
+    color: black;
+	text-align: justify;
+	font-size: 14px;
+	word-wrap: break-word;
+    
+    opacity:0;
+    transition: opacity 400ms ease-out;
+}
+
+.tabs>.tab>[id^="tab"]:checked + label {
+    top: 0;
+	border-color: black;
+	border-style: solid;
+	border-width: thin;
+	background-color: #CC3300;
+		color: white;
+	opacity: 1.0;
+}
+
+.tabs>.tab>[id^="tab"]:checked ~ [id^="tab-content"] {
+    z-index: 1;/* or display: block; */
+   
+    opacity: 1;
+    transition: opacity 400ms ease-out;
+}
+
+
+.footer {
+	background-color: #cc3300;
+	width: 100%;
+	padding-top: 50px;
+	margin-top: 450px;
+	height: 70px;
+	color: white;
+	text-align: center;
+	position: sticky;
+
+}
+
+.address {
+	color: white;
+	float: left;
+	padding-left: 20px;
+}
+
